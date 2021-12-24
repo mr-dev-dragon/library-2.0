@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>librery 2.0</title>
+</head>
+<body>
+    <main>
+         <section class="s1">
+            <article class="a1">
+                <form id="form">
+                    <div>
+                    <p class="fill"></p>
+                        <input id="title"  style="text-transform: capitalize;"     minlength="4" name="title" type="text" >
+                    </div>
+                    <div>
+
+                        <p class="fill"></p>
+                        <input id="author" style="text-transform: capitalize;" value="Mickle" minlength="4"name="author" type="text" >
+                    </div> 
+                    <div>
+                        <p class="fill"></p>
+                        <input id="price" value="40" name="price" type="text"placeholder='Price'>
+                    </div>
+                    <div>
+                        <p class="fill"></p>
+                        <input id="date"  name="date" type="date" >
+                    </div> 
+            </article> 
+            <article class="a2">
+                    <div>
+                        <p class="fill"></p>
+                        <select  id="language" name="language" >
+                        <option disabled hidden selected value >langouge</option>
+                        <option id="Arabic"   value="Arabe" selected>Arabe</option>
+                        <option  id="English" value="Anglais">English</option>
+                        <option  id="Franch"  value="Francais">Francais</option>
+                        </select>
+                    </div>
+                    <div class="init">
+                     
+                        <div id="type-input" class="choices" >
+                        <input type="radio" id="Novel" name="Selectionner" value="Novel">
+                        <label for="Novel">Novel</label>
+                        <input type="radio" id="essy" name="Selectionner" value="essy" >
+                        <label for="essy">Essay</label>
+                        <input type="radio" id="Comic" name="Selectionner" value="Comic">
+                        <label for="Comic">comdy </label>
+                        </div>
+                    </div>
+                    <p class="fill"></p>
+                    <input id="email"  name="email de l'author" type="email" >
+                </div> 
+
+                </form>   
+            </article>
+        </section>
+        <section id="s2" class="s2">
+                <button  class="btn" form="form" type="submit" id="button">ADD</button>
+                <button  class="save-btn" onclick="save()" id="save">SAVE</button>
+        </section>
+        <section class="s3">
+                <table id="table">
+                        <thead class="test">
+                            <h1 id="h1"></h1>
+                            <tr>
+                                <th>Title</th>
+                                <th>Aothur</th>
+                                <th>Price</th>
+                                <th>Date</th>
+                                <th>Langouge</th>
+                                <th>Type</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+          
+                    <input class="btnx" type="button" value="Print Table" onclick="myApp.printTable()" />
+         </section>        
+      </main>
+     <script src="pro.js">  </script>
+</body>
+</html>
